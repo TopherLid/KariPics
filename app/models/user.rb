@@ -5,7 +5,7 @@ class User < ApplicationRecord
   enum :role, [:admin, :usuario]
 
   validates :name, presence: true
-  validates :avatar, presence: true
+  # validates :avatar, presence: true
 
   has_one_attached :avatar
 
